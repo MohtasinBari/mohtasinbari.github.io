@@ -80,6 +80,27 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
+        /* Profile Image Styling */
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 25px;
+            border: 3px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 25px rgba(0, 240, 255, 0.3), inset 0 0 15px rgba(138, 43, 226, 0.4);
+            transition: all 0.4s ease;
+            position: relative;
+            z-index: 2;
+            background-color: white; /* Added just in case the logo has a transparent background */
+        }
+
+        .profile-img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 40px rgba(0, 240, 255, 0.5), inset 0 0 20px rgba(138, 43, 226, 0.6);
+            border-color: rgba(0, 240, 255, 0.5);
+        }
+
         h1 {
             font-family: 'Share Tech Mono', monospace;
             font-size: 3.5em;
@@ -275,6 +296,9 @@
 <div class="container">
     
     <header>
+        <!-- Updated Profile Picture -->
+        <img src="AIUB UNDP3.png" alt="Mohtasin Bari" class="profile-img">
+        
         <h1>Mohtasin Bari</h1>
         <div class="subtitle">
             <i class="fas fa-microchip"></i> B.Sc in Computer Science & Engineering | AI Developer
