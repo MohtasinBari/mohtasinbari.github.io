@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohtasin Bari | AI & Software Developer</title>
-    <!-- Modern professional fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -28,14 +27,12 @@
             padding: 0;
             line-height: 1.7;
             overflow-x: hidden;
-            /* Deep, ambient glow background */
             background-image: 
                 radial-gradient(circle at 10% 20%, rgba(138, 43, 226, 0.15) 0%, transparent 40%),
                 radial-gradient(circle at 90% 80%, rgba(0, 240, 255, 0.15) 0%, transparent 40%);
             background-attachment: fixed;
         }
 
-        /* Subtle animated background grid */
         body::before {
             content: '';
             position: fixed;
@@ -61,7 +58,6 @@
             z-index: 1;
         }
 
-        /* Glassmorphism Header */
         header {
             text-align: center;
             padding: 60px 30px;
@@ -80,7 +76,6 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* Profile Image Styling */
         .profile-img {
             width: 160px;
             height: 160px;
@@ -92,7 +87,7 @@
             transition: all 0.4s ease;
             position: relative;
             z-index: 2;
-            background-color: white; /* Added just in case the logo has a transparent background */
+            background-color: white;
         }
 
         .profile-img:hover {
@@ -143,7 +138,6 @@
             transform: translateY(-2px);
         }
 
-        /* Modern Gradient Button */
         .btn-contact {
             display: inline-flex;
             align-items: center;
@@ -168,7 +162,6 @@
             box-shadow: 0 8px 25px rgba(0, 240, 255, 0.4);
         }
 
-        /* Content Sections */
         section {
             background: var(--card-bg);
             margin: 40px 0;
@@ -184,11 +177,16 @@
             animation: slideUp 0.8s ease-out forwards;
         }
 
+        /* Staggered load delays for all sections */
         section:nth-child(2) { animation-delay: 0.2s; }
-        section:nth-child(3) { animation-delay: 0.4s; }
-        section:nth-child(4) { animation-delay: 0.6s; }
-        section:nth-child(5) { animation-delay: 0.8s; }
-        section:nth-child(6) { animation-delay: 1.0s; }
+        section:nth-child(3) { animation-delay: 0.3s; }
+        section:nth-child(4) { animation-delay: 0.4s; }
+        section:nth-child(5) { animation-delay: 0.5s; }
+        section:nth-child(6) { animation-delay: 0.6s; }
+        section:nth-child(7) { animation-delay: 0.7s; }
+        section:nth-child(8) { animation-delay: 0.8s; }
+        section:nth-child(9) { animation-delay: 0.9s; }
+        section:nth-child(10) { animation-delay: 1.0s; }
 
         @keyframes slideUp {
             to { opacity: 1; transform: translateY(0); }
@@ -216,7 +214,6 @@
             font-size: 1.1em;
         }
 
-        /* Grid Layouts for Information */
         .grid-list {
             list-style: none;
             padding: 0;
@@ -251,7 +248,6 @@
             font-size: 1.05em;
         }
 
-        /* Skill Tags */
         .skills-container {
             display: flex;
             flex-wrap: wrap;
@@ -289,6 +285,18 @@
             color: var(--bg-dark);
             box-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
         }
+
+        /* Compact list for Certifications to save space */
+        .compact-list {
+            padding-left: 20px;
+            color: var(--text-muted);
+        }
+        .compact-list li {
+            margin-bottom: 12px;
+        }
+        .compact-list strong {
+            color: var(--text-main);
+        }
     </style>
 </head>
 <body>
@@ -296,7 +304,6 @@
 <div class="container">
     
     <header>
-        <!-- Updated Profile Picture -->
         <img src="AIUB UNDP3.png" alt="Mohtasin Bari" class="profile-img">
         
         <h1>Mohtasin Bari</h1>
@@ -319,7 +326,68 @@
 
     <section>
         <h2><i class="fas fa-user-astronaut"></i> Personal Profile</h2>
-        <p>Highly motivated Computer Science and Engineering student at American International University-Bangladesh with a 3.80 CGPA and a strong foundation in software development and AI-driven solutions. As a dedicated researcher and ML/DL enthusiast, I possess technical proficiency in C++, Java, Python, and SQL, complemented by a CISCO certification and a proven track record of developing complex projects ranging from defense mechanism software to smart tourism applications.</p>
+        <p>Highly motivated Computer Science and Engineering student at American International University-Bangladesh with a 3.30 CGPA and a strong foundation in software development and AI-driven solutions. As a dedicated researcher and ML/DL enthusiast, I possess technical proficiency in C++, Java, Python, and SQL, complemented by a CISCO certification and a proven track record of developing complex projects ranging from defense mechanism software to smart tourism applications. Beyond technical expertise, my involvement in multiple academic research clubs underscore my leadership, critical thinking, and collaborative skills in high-stakes environments.</p>
+    </section>
+
+    <section>
+        <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+        <ul class="grid-list">
+            <li>
+                <span class="highlight-title">B.Sc in Computer Science And Engineering (2024-2028)</span>
+                <span style="color: var(--text-muted); display: block;">American International University-Bangladesh, Dhaka | <strong>GPA: 3.30/4.00</strong></span>
+                <span style="font-size: 0.95em; color: var(--text-muted); margin-top: 10px; display: block;"><strong>Relevant Coursework:</strong> C++, C Sharp, Java, Database, Data Structure, Algorithms<br><strong>Key Research Interests:</strong> Machine Learning, Artificial Engineering, Deep Learning</span>
+            </li>
+            <li>
+                <span class="highlight-title">Higher Secondary Certificate Examination (2022-2023)</span>
+                <span style="color: var(--text-muted);">Adamjee Cantonment College, Dhaka | <strong>GPA: 4.92/5.00</strong></span>
+            </li>
+            <li>
+                <span class="highlight-title">Secondary School Certificate Examination (2019-2021)</span>
+                <span style="color: var(--text-muted);">Milestone School And College, Dhaka | <strong>GPA: 5.00/5.00</strong></span>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2><i class="fas fa-network-wired"></i> Experience & Research</h2>
+        <ul class="grid-list">
+            <li>
+                <span class="highlight-title">Student Researcher - Axess Research Lab, AIUB</span>
+                <span style="color: var(--text-muted); font-size: 0.9em; display: block; margin-bottom: 8px;">April 2026</span>
+                <span style="color: var(--text-muted);">Benchmarked deployment performance of state-of-the-art foundation models on physical hardware. Investigated novel techniques for in-context policy adaptation in unstructured environments.</span>
+            </li>
+            <li>
+                <span class="highlight-title">Student Researcher - NEDAAS Lab, AIUB</span>
+                <span style="color: var(--text-muted); font-size: 0.9em; display: block; margin-bottom: 8px;">March 2026</span>
+                <span style="color: var(--text-muted);">Attended academic conferences and presented the research ideas.</span>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2><i class="fas fa-book-open"></i> Academic Publications & Conferences</h2>
+        <ul class="grid-list">
+            <li>
+                <span class="highlight-title">PEAP: Pretrained Encoder Adaption Pipeline for Weakly Supervised Indoor Object Retrieval</span>
+                <span style="color: var(--text-muted);">Al Jubair Hossain, Iftekharul Islam, Faiyaz Hasan, Mohtasin Bari, Tahruma Tazin, Munawar Mahtab Ansary, Efaz Kabir, Mithila Arman, Samuel Kim. <strong>Published at Springer Nature.</strong></span>
+            </li>
+            <li>
+                <span class="highlight-title">Analysing the Economic Impact of Textile Waste Management on Bangladesh's Sustainable Development</span>
+                <span style="color: var(--text-muted);">Mohtasin Bari, Sadi Mohammad Meraj, Md. Mortuza Ahmmed. <strong>Presented at 4th International Conference on Textile Science and Engineering, BUTEX.</strong></span>
+            </li>
+            <li>
+                <span class="highlight-title">Floating Perovskite-Biofacial Solar Films on Haor Wetlands for Year-Round Power Generation</span>
+                <span style="color: var(--text-muted);">Mohtasin Bari, Soyeb Mahmud Raja, Shahrier Sadib, Nurul Amin Khondoker, Tamim Hasan Apurbo, Md. Mortuza Ahmmed. <strong>Presented at International Conference on Physics 2026, Dhaka University.</strong></span>
+            </li>
+            <li>
+                <span class="highlight-title">Integrating Transit-Oriented Development and Green Infrastructure: Pathways to Low-Carbon Urban Mobility</span>
+                <span style="color: var(--text-muted);">Mohtasin Bari, Sadi Mohammad Meraj, Md. Mortuza Ahmmed. <strong>Presented at 8th International Conference on Sustainable Development, United International University.</strong></span>
+            </li>
+            <li>
+                <span class="highlight-title">Contrasting Urban Decarbonization Pathways: Municipial Waste to Energy Capacity in Berlin Vs Dhaka</span>
+                <span style="color: var(--text-muted);">Mohtasin Bari, Sadi Mohammad Meraj, Md. Mahdi Hossain, Nafis Ahmed, Md. Mortuza Ahmmed. <strong>Presented at 8th International Conference on Sustainable Development, United International University.</strong></span>
+            </li>
+        </ul>
     </section>
 
     <section>
@@ -345,51 +413,34 @@
     </section>
 
     <section>
-        <h2><i class="fas fa-book-open"></i> Academic Publications</h2>
-        <ul class="grid-list">
-            <li>
-                <span class="highlight-title">PEAP: Pretrained Encoder Adaption Pipeline for Weakly Supervised Indoor Object Retrieval</span>
-                <span style="color: var(--text-muted);">Al Jubair Hossain, Iftekharul Islam, Faiyaz Hasan, Mohtasin Bari, Tahruma Tazin, Munawar Mahtab Ansary, Efaz Kabir, Mithila Arman, Samuel Kim. <strong>Published at Springer Nature.</strong></span>
-            </li>
-            <li>
-                <span class="highlight-title">Analysing the Economic Impact of Textile Waste Management on Bangladesh's Sustainable Development</span>
-                <span style="color: var(--text-muted);">Mohtasin Bari, Sadi Mohammad Meraj, Md. Mortuza Ahmmed. <strong>Presented at 4th International Conference on Textile Science and Engineering, BUTEX.</strong></span>
-            </li>
-            <li>
-                <span class="highlight-title">Floating Perovskite-Biofacial Solar Films on Haor Wetlands for Year-Round Power Generation</span>
-                <span style="color: var(--text-muted);">Mohtasin Bari, Soyeb Mahmud Raja, Shahrier Sadib, Nurul Amin Khondoker, Tamim Hasan Apurbo, Md. Mortuza Ahmmed. <strong>Presented at International Conference on Physics 2026, Dhaka University.</strong></span>
-            </li>
+        <h2><i class="fas fa-certificate"></i> Certifications</h2>
+        <ul class="compact-list">
+            <li><strong>NSTU Research Society:</strong> Participated at the LaTex Bootcamp</li>
+            <li><strong>International Congress on Artificial Intelligence-ICAI 2025, BUBT:</strong> Certificate Of Excellence As a Best Ambassador</li>
+            <li><strong>Capacity Building Training on Digital Manufacturing (AIUB/British Council):</strong> Certificate Of Participation</li>
+            <li><strong>Transforming Additive Manufacturing by Integrating Machine Learning and Digital Twins (AIUB/British Council):</strong> Certificate Of Participation</li>
+            <li><strong>Knowledge in Digital Manufacturing Certification (AIUB/British Council):</strong> Passed the AIUB-BCU Collaborative Project</li>
+            <li><strong>LinkedIn Profile Optimization Workshop:</strong> AIUB English Club - Certificate of Participation</li>
+            <li><strong>Test Hacks to get Hired:</strong> Grameenphone Ltd. - Certificate of Completion</li>
+            <li><strong>AI Hacks For A Winning CV:</strong> Grameenphone Ltd. - Certificate of Completion</li>
+            <li><strong>Communicate with Confidence:</strong> Grameenphone Ltd. - Certificate of Completion</li>
+            <li><strong>From Idea To Paper: A Guided Research Writting Workshop:</strong> AIUB Research And Development Club - Certificate of Participation</li>
+            <li><strong>Unlocking Research: A Beginner's Blueprint:</strong> AIUB Research And Development Club - Certificate of Participation</li>
+            <li><strong>IT Essentials:</strong> CISCO - Verified</li>
+            <li><strong>Cisco Certified Network Professional Cloud:</strong> AIUB - Certified Professional</li>
+            <li><strong>Complete Microsoft Word Excel PowerPoint Course:</strong> UDEMY - Certificate of Completion</li>
+            <li><strong>Microsoft Excel Pivot Tables: The Pivot Table Masterclass:</strong> UDEMY - Certificate of Completion</li>
+            <li><strong>PowerShell Regular Expressions: Regex Master Class:</strong> UDEMY - Certificate of Completion</li>
         </ul>
     </section>
 
     <section>
-        <h2><i class="fas fa-network-wired"></i> Experience & Research</h2>
-        <ul class="grid-list">
-            <li>
-                <span class="highlight-title">Student Researcher - Axess Research Lab, AIUB</span>
-                <span style="color: var(--text-muted); font-size: 0.9em; display: block; margin-bottom: 8px;">April 2026</span>
-                <span style="color: var(--text-muted);">Benchmarked deployment performance of state-of-the-art foundation models on physical hardware. Investigated novel techniques for in-context policy adaptation in unstructured environments.</span>
-            </li>
-            <li>
-                <span class="highlight-title">Student Researcher - NEDAAS Lab, AIUB</span>
-                <span style="color: var(--text-muted); font-size: 0.9em; display: block; margin-bottom: 8px;">March 2026</span>
-                <span style="color: var(--text-muted);">Attended academic conferences and presented core research ideas.</span>
-            </li>
-        </ul>
-    </section>
-
-    <section>
-        <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-        <ul class="grid-list">
-            <li>
-                <span class="highlight-title">B.Sc in Computer Science And Engineering</span>
-                <span style="color: var(--text-muted); display: block;">American International University-Bangladesh (2024-2028) | <strong>GPA: 3.80/4.00</strong></span>
-                <span style="font-size: 0.9em; color: var(--text-muted); margin-top: 10px; display: block;"><strong>Interests:</strong> Machine Learning, Artificial Intelligence, Deep Learning</span>
-            </li>
-            <li>
-                <span class="highlight-title">Higher Secondary Certificate Examination</span>
-                <span style="color: var(--text-muted);">Adamjee Cantonment College, Dhaka (2022-2023) | <strong>GPA: 4.92/5.00</strong></span>
-            </li>
+        <h2><i class="fas fa-users"></i> Extra Curricular Activities</h2>
+        <ul class="grid-list" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+            <li><span class="highlight-title">Adamjee Eco Amica Club</span><span style="color: var(--text-muted);">Alumni and Organizing Secretary</span></li>
+            <li><span class="highlight-title">AIUB Environment Club</span><span style="color: var(--text-muted);">Executive Member, Graphics And Communication</span></li>
+            <li><span class="highlight-title">Office Of Student Affairs, AIUB</span><span style="color: var(--text-muted);">Student Volunteer</span></li>
+            <li><span class="highlight-title">23rd Convocation, AIUB</span><span style="color: var(--text-muted);">Convocation Volunteer</span></li>
         </ul>
     </section>
 
@@ -399,21 +450,25 @@
             <p style="margin-bottom: 10px; color: var(--text-main); font-weight: 500;">Core Technologies</p>
             <div class="skills-container">
                 <span class="skill-tag">Python</span>
-                <span class="skill-tag">C# / C++</span>
+                <span class="skill-tag">C Sharp / C++</span>
                 <span class="skill-tag">Java</span>
                 <span class="skill-tag">Machine Learning</span>
                 <span class="skill-tag">Deep Learning</span>
                 <span class="skill-tag">Artificial Intelligence</span>
                 <span class="skill-tag">Software Engineering</span>
+                <span class="skill-tag">Microsoft Office</span>
                 <span class="skill-tag">SQL</span>
             </div>
         </div>
         <div>
-            <p style="margin-bottom: 10px; color: var(--text-main); font-weight: 500;">Professional Skills</p>
+            <p style="margin-bottom: 10px; color: var(--text-main); font-weight: 500;">Professional Skills & Languages</p>
             <div class="skills-container">
                 <span class="skill-tag soft">Team Work</span>
                 <span class="skill-tag soft">Public Speaking</span>
-                <span class="skill-tag soft">Analytical Thinking</span>
+                <span class="skill-tag soft">Punctual</span>
+                <span class="skill-tag soft">Hard Working</span>
+                <span class="skill-tag soft">Patience</span>
+                <span class="skill-tag soft">Negotiable</span>
                 <span class="skill-tag soft">English (Fluent)</span>
                 <span class="skill-tag soft">Bangla (Native)</span>
             </div>
@@ -421,13 +476,28 @@
     </section>
 
     <section>
-        <h2><i class="fas fa-certificate"></i> Selected Certifications & Extracurriculars</h2>
-        <ul class="grid-list" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
-            <li><strong>International Congress on Artificial Intelligence 2025:</strong> Certificate Of Excellence As a Best Ambassador</li>
-            <li><strong>Digital Manufacturing (AIUB/British Council):</strong> Knowledge in Digital Manufacturing Certification</li>
-            <li><strong>CISCO:</strong> IT Essentials Verified & Certified Network Professional Cloud</li>
-            <li><strong>AIUB Environment Club:</strong> Executive Member, Graphics And Communication</li>
-            <li><strong>Adamjee Eco Amica Club:</strong> Alumni and Organizing Secretary</li>
+        <h2><i class="fas fa-address-book"></i> References</h2>
+        <ul class="grid-list" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+            <li>
+                <span class="highlight-title">Dr. Mohammed Abdul Mannan</span>
+                <span style="color: var(--text-muted); font-size: 0.9em;">Professor And Associate Dean<br>Dept. of Electrical And Electronics Engineering, AIUB<br><i class="fas fa-envelope"></i> mdmannan@aiub.com</span>
+            </li>
+            <li>
+                <span class="highlight-title">Kawser Irom Rushee</span>
+                <span style="color: var(--text-muted); font-size: 0.9em;">Assistant Professor<br>Dept. Of Computer Science, AIUB<br><i class="fas fa-envelope"></i> rushee@aiub.com</span>
+            </li>
+            <li>
+                <span class="highlight-title">Mahfujur Rahman</span>
+                <span style="color: var(--text-muted); font-size: 0.9em;">Assistant Professor<br>Dept. Of Computer Science, AIUB<br><i class="fas fa-envelope"></i> mahfuj@aiub.com</span>
+            </li>
+            <li>
+                <span class="highlight-title">Al Jubair Hossain</span>
+                <span style="color: var(--text-muted); font-size: 0.9em;">Lecturer<br>Dept. Of Computer Science, AIUB<br><i class="fas fa-envelope"></i> jubair.hossain@aiub.com</span>
+            </li>
+            <li>
+                <span class="highlight-title">Sanjida Afroz Shimu</span>
+                <span style="color: var(--text-muted); font-size: 0.9em;">Lecturer<br>Dept. Of Computer Science, AIUB<br><i class="fas fa-envelope"></i> sanjida.shimu@aiub.com</span>
+            </li>
         </ul>
     </section>
 
