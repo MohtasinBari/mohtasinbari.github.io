@@ -55,14 +55,14 @@ nav a:hover,nav a.act{color:var(--ac)}
 #th:hover{border-color:var(--ac)}
 
 /* ---------- hero ---------- */
-.hero{position:relative;z-index:1;min-height:90vh;display:flex;align-items:center;padding:60px 6vw;overflow:hidden}
+.hero{position:relative;z-index:1;min-height:90vh;display:flex;align-items:center;justify-content:space-between;gap:4vw;padding:60px 6vw;overflow:hidden}
 #net{position:absolute;inset:0;width:100%;height:100%}
-.hero-in{position:relative;max-width:780px;pointer-events:none}
+.hero-in{position:relative;max-width:640px;flex:1 1 auto;pointer-events:none}
 .hero-in a{pointer-events:auto}
 .badge{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border:1px solid var(--line);border-radius:30px;background:var(--surf);font-size:14px;color:var(--mu);margin-bottom:22px;animation:rise .9s both}
 .badge i{width:8px;height:8px;border-radius:50%;background:var(--gr);box-shadow:0 0 0 0 var(--gr);animation:ping 2s infinite}
 @keyframes ping{70%{box-shadow:0 0 0 9px transparent}100%{box-shadow:0 0 0 0 transparent}}
-.hero h1{font-size:clamp(46px,9vw,108px);font-weight:800;letter-spacing:-.035em;padding-bottom:.08em;
+.hero h1{font-size:clamp(44px,7vw,92px);font-weight:800;letter-spacing:-.035em;padding-bottom:.08em;
   background:linear-gradient(100deg,var(--tx) 30%,var(--ac) 48%,var(--am) 54%,var(--tx) 70%);background-size:250% 100%;
   -webkit-background-clip:text;background-clip:text;color:transparent;
   animation:rise 1s .1s cubic-bezier(.2,.8,.2,1) both,shine 6s 1.2s ease-in-out infinite}
@@ -79,6 +79,38 @@ nav a:hover,nav a.act{color:var(--ac)}
 .mouse{position:absolute;left:50%;bottom:22px;width:22px;height:36px;margin-left:-11px;border:2px solid var(--mu);border-radius:14px;opacity:.6}
 .mouse::after{content:"";position:absolute;left:50%;top:6px;width:4px;height:8px;margin-left:-2px;border-radius:3px;background:var(--ac);animation:scrl 1.6s infinite}
 @keyframes scrl{to{transform:translateY(12px);opacity:0}}
+
+/* ---------- portrait + floating skills ---------- */
+.portrait{position:relative;z-index:1;flex:0 0 auto;width:min(400px,80vw);aspect-ratio:1;animation:rise 1.1s .3s cubic-bezier(.2,.8,.2,1) both}
+.portrait .ring{position:absolute;inset:3%;border-radius:50%;border:1px dashed color-mix(in srgb,var(--ac) 55%,transparent);animation:spin 40s linear infinite}
+.portrait .ring::after{content:"";position:absolute;top:-5px;left:50%;width:10px;height:10px;margin-left:-5px;border-radius:50%;background:var(--am);box-shadow:0 0 14px var(--am)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.ph{position:absolute;inset:14%;border-radius:50%;overflow:hidden;background:linear-gradient(135deg,var(--surf2),var(--surf));
+  border:3px solid transparent;
+  background-clip:padding-box;
+  box-shadow:0 0 0 3px var(--ac),0 0 0 9px color-mix(in srgb,var(--ac) 18%,transparent),0 24px 70px color-mix(in srgb,var(--ac) 30%,transparent);
+  display:grid;place-items:center}
+.ph span{font:800 clamp(48px,9vw,96px) "Bricolage Grotesque";color:var(--ac);letter-spacing:-.04em}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.fl{position:absolute;display:flex;align-items:center;gap:10px;padding:8px 14px 8px 8px;border-radius:40px;background:var(--surf);border:1px solid var(--line);
+  box-shadow:var(--shadow);animation:float 5s ease-in-out infinite;white-space:nowrap;
+  cursor:grab;touch-action:none;user-select:none;-webkit-user-select:none;transition:box-shadow .2s,border-color .2s}
+.fl:hover{border-color:var(--ac)}
+.fl.drag{cursor:grabbing;animation-play-state:paused;z-index:5;border-color:var(--ac);box-shadow:0 20px 50px color-mix(in srgb,var(--ac) 35%,transparent)}
+.fl .lg{width:42px;height:42px;border-radius:50%;background:#fff;display:grid;place-items:center}
+.fl img{width:26px;height:26px;display:block}
+.fl b{font:700 15px "Bricolage Grotesque";line-height:1.1}
+.fl small{display:block;font-size:12px;color:var(--mu);font-weight:400}
+.f1{top:2%;left:-6%}
+.f2{top:42%;right:-12%;animation-delay:-1.7s}
+.f3{bottom:3%;left:-2%;animation-delay:-3.2s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+@media(max-width:860px){
+  .hero{flex-direction:column-reverse;justify-content:center;gap:34px;padding-top:40px;padding-bottom:70px}
+  .portrait{width:min(300px,72vw)}
+  .f1{left:-14%}.f2{right:-18%}.f3{left:-10%}
+  .fl{padding:6px 12px 6px 6px}.fl .lg{width:34px;height:34px}.fl img{width:20px;height:20px}.fl b{font-size:13px}.fl small{display:none}
+}
 
 /* ---------- about + stats ---------- */
 .about{display:grid;gap:34px;grid-template-columns:1.3fr 1fr;align-items:start}
@@ -188,6 +220,18 @@ h2.rv.in::after{width:72px}
     <div class="role" aria-live="off"><span id="ty"></span></div>
     <p>Computer Science and Engineering student at AIUB, Dhaka. I research machine learning and deep learning, from indoor object retrieval to sustainable energy and cities.</p>
     <div class="btns"><a class="btn p" href="#research">See my research</a><a class="btn" href="#contact">Get in touch</a></div>
+  </div>
+
+  <div class="portrait">
+    <div class="ring" aria-hidden="true"></div>
+    <div class="ph">
+      <span aria-hidden="true">MB</span>
+      <!-- Put your photo next to this file and name it profile.jpg (or change the src) -->
+      <img src="profile.jpg" alt="Portrait of Mohtasin Bari" onerror="this.style.display='none'">
+    </div>
+    <div class="fl f1"><div class="lg"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/latex/latex-original.svg" alt="" onerror="this.style.display='none'"></div><div><b>Research</b><small>ML · DL · Papers</small></div></div>
+    <div class="fl f2"><div class="lg"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="" onerror="this.style.display='none'"></div><div><b>Developer</b><small>Python · C++ · C#</small></div></div>
+    <div class="fl f3"><div class="lg"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="" onerror="this.style.display='none'"></div><div><b>Software Engineer</b><small>Java · SQL · Git</small></div></div>
   </div>
   <div class="mouse" aria-hidden="true"></div>
 </header>
@@ -432,6 +476,36 @@ if(reduce){ty.textContent=roles[0]}else{
   setTimeout(tick,t);
  })();
 }
+
+/* ---------- draggable skill badges ---------- */
+(function(){
+ const hero=document.querySelector('.hero');
+ document.querySelectorAll('.fl').forEach(el=>{
+  let x=0,y=0,sx=0,sy=0,ox=0,oy=0;
+  el.tabIndex=0;el.title='Drag me (double-click to reset)';
+  const put=()=>{el.style.translate=`${x}px ${y}px`};
+  const keep=()=>{ // keep the badge inside the hero
+   const h=hero.getBoundingClientRect(),r=el.getBoundingClientRect();
+   if(r.left<h.left)x+=h.left-r.left;if(r.right>h.right)x-=r.right-h.right;
+   if(r.top<h.top)y+=h.top-r.top;if(r.bottom>h.bottom)y-=r.bottom-h.bottom;put();
+  };
+  el.addEventListener('pointerdown',e=>{
+   el.setPointerCapture(e.pointerId);el.classList.add('drag');
+   sx=e.clientX;sy=e.clientY;ox=x;oy=y;
+  });
+  el.addEventListener('pointermove',e=>{
+   if(!el.classList.contains('drag'))return;
+   x=ox+e.clientX-sx;y=oy+e.clientY-sy;put();keep();
+  });
+  const end=()=>el.classList.remove('drag');
+  el.addEventListener('pointerup',end);el.addEventListener('pointercancel',end);
+  el.addEventListener('dblclick',()=>{x=y=0;el.style.transition='translate .5s cubic-bezier(.2,.8,.2,1)';put();setTimeout(()=>el.style.transition='',520)});
+  el.addEventListener('keydown',e=>{
+   const d={ArrowLeft:[-12,0],ArrowRight:[12,0],ArrowUp:[0,-12],ArrowDown:[0,12]}[e.key];
+   if(d){e.preventDefault();x+=d[0];y+=d[1];put();keep()}
+  });
+ });
+})();
 
 /* ---------- scroll progress + active nav ---------- */
 const prog=document.getElementById('prog'),links=[...document.querySelectorAll('nav a')];
