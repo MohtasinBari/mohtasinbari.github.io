@@ -16,19 +16,25 @@ I'm a Computer Science and Engineering student at American International Univers
 My interests include Artificial Intelligence, Machine Learning, Deep Learning, Software Engineering, and intelligent systems. I enjoy exploring emerging technologies, conducting research, and developing practical solutions to real-world problems.
 
 Currently, I am involved in research activities at Axess Research Lab, exploring foundation models and intelligent systems.
-
 🔬 Interested in AI/ML research and emerging technologies.
+
 💻 Building software projects and exploring innovative solutions.
+
 📚 Continuously learning and improving my technical skills.
+
 🚀 Passionate about research, development, and problem-solving.
+
 🤝 Open to research collaborations and exciting opportunities.
+
 🧠 Areas of Interest:
-Artificial Intelligence & Machine Learning,
-Deep Learning & Neural Networks,
-Foundation Models & Large Language Models,
-Software Engineering,
-Research & Scientific Computing,
-Data Science & Intelligent Systems
+
+⧉ Artificial Intelligence & Machine Learning
+⧉ Deep Learning & Neural Networks
+⧉ Foundation Models & Large Language Models
+⧉ Software Engineering
+⧉ Research & Scientific Computing
+⧉ Data Science & Intelligent Systems
+
 🛠️ Technical Skills
 
 <p align="left">
