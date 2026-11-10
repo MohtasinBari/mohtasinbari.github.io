@@ -66,10 +66,21 @@ Want to know more about my journey, experience, projects, research, and achievem
 </p>
 
 🤝 Connect With Me
-🌍 Portfolio: mohtasinbari.netlify.app
-💻 GitHub: @mohtasinbari
-💼 LinkedIn: Connect with me
 
+<p align="center">
+<a href="https://mohtasinbari.netlify.app/">
+<img src="https://img.shields.io/badge/Portfolio-0A66C2?style=for-the-badge&logo=netlify&logoColor=white" />
+</a>
+<a href="https://github.com/mohtasinbari">
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+</a>
+<a href="https://www.linkedin.com/in/mohtasin-bari/">
+<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
+<a href="mohtasinbariupom5660@gmail.com">
+<img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+</a>
+</p>
 <p align="center">
 <i>"Building Knowledge, Exploring Innovation, and Creating Impact."</i>
 </p>
