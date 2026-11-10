@@ -22,12 +22,12 @@ Currently, I am involved in research activities at Axess Research Lab, exploring
 📚 Continuously learning and improving my technical skills.
 🚀 Passionate about research, development, and problem-solving.
 🤝 Open to research collaborations and exciting opportunities.
-🧠 Areas of Interest
-Artificial Intelligence & Machine Learning
-Deep Learning & Neural Networks
-Foundation Models & Large Language Models
-Software Engineering
-Research & Scientific Computing
+🧠 Areas of Interest:
+Artificial Intelligence & Machine Learning,
+Deep Learning & Neural Networks,
+Foundation Models & Large Language Models,
+Software Engineering,
+Research & Scientific Computing,
 Data Science & Intelligent Systems
 🛠️ Technical Skills
 
