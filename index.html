@@ -5,10 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="Mohtasin Bari – CSE student at AIUB and machine learning researcher.">
 <title>Mohtasin Bari – Portfolio</title>
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a1024'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='28' font-weight='800' text-anchor='middle' fill='%237cc4ff'%3EMB%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<noscript><style>#boot{display:none}.rv{opacity:1;transform:none}.meter::after{transform:scaleX(1)}.tl::before{transform:none}h2.rv::after{width:72px}</style></noscript>
 <style>
 /* ---------- tokens ---------- */
 :root{
@@ -32,7 +33,7 @@ a{color:var(--ac)}
 :focus-visible{outline:2px solid var(--ac);outline-offset:3px;border-radius:4px}
 section{position:relative;z-index:1;padding:88px 6vw;max-width:1140px;margin:auto}
 h2{font-size:clamp(30px,5vw,46px);letter-spacing:-.02em;margin-bottom:34px}
-.eyebrow{display:block;font:500 13px "IBM Plex Sans";letter-spacing:.16em;text-transform:uppercase;color:var(--am);margin-bottom:10px}
+.eyebrow{display:block;font:500 13px "IBM Plex Sans",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--am);margin-bottom:10px}
 
 /* ---------- ambient layers ---------- */
 .prog{position:fixed;top:0;left:0;right:0;height:3px;z-index:20;background:linear-gradient(90deg,var(--ac),var(--am));transform-origin:left;transform:scaleX(0)}
@@ -48,7 +49,7 @@ h2{font-size:clamp(30px,5vw,46px);letter-spacing:-.02em;margin-bottom:34px}
 nav{position:sticky;top:0;z-index:15;display:flex;gap:6px 20px;flex-wrap:wrap;align-items:center;
   padding:calc(12px + env(safe-area-inset-top,0px)) 6vw 12px;
   background:color-mix(in srgb,var(--bg) 82%,transparent);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-nav b{font:800 20px "Bricolage Grotesque";margin-right:auto;letter-spacing:-.02em}
+nav b{font:800 20px "Bricolage Grotesque",sans-serif;margin-right:auto;letter-spacing:-.02em}
 nav b span{color:var(--ac)}
 nav a{color:var(--mu);text-decoration:none;font-size:15px;transition:color .2s}
 nav a:hover,nav a.act{color:var(--ac)}
@@ -65,10 +66,10 @@ nav a:hover,nav a.act{color:var(--ac)}
 @keyframes ping{70%{box-shadow:0 0 0 9px transparent}100%{box-shadow:0 0 0 0 transparent}}
 .hero h1{font-size:clamp(44px,7vw,92px);font-weight:800;letter-spacing:-.035em;padding-bottom:.08em;
   background:linear-gradient(100deg,var(--tx) 30%,var(--ac) 48%,var(--am) 54%,var(--tx) 70%);background-size:250% 100%;
-  -webkit-background-clip:text;background-clip:text;color:transparent;
+  -webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;
   animation:rise 1s .1s cubic-bezier(.2,.8,.2,1) both,shine 6s 1.2s ease-in-out infinite}
 @keyframes shine{0%,100%{background-position:100% 0}50%{background-position:0 0}}
-.role{font:700 clamp(20px,3vw,28px) "Bricolage Grotesque";color:var(--ac);min-height:1.5em;margin:12px 0 10px;animation:rise 1s .2s both}
+.role{font:700 clamp(20px,3vw,28px) "Bricolage Grotesque",sans-serif;color:var(--ac);min-height:1.5em;margin:12px 0 10px;animation:rise 1s .2s both}
 .role::after{content:"";display:inline-block;width:3px;height:1em;background:var(--am);margin-left:4px;vertical-align:-.12em;animation:blink 1s steps(2) infinite}
 @keyframes blink{50%{opacity:0}}
 .hero p{font-size:clamp(18px,2.2vw,22px);color:var(--mu);max-width:34em;margin:0 0 28px;animation:rise 1s .3s both}
@@ -84,7 +85,7 @@ nav a:hover,nav a.act{color:var(--ac)}
 /* ---------- terminal intro ---------- */
 html.loading body{overflow:hidden}
 html.loading .hero-in *,html.loading .portrait,html.loading .portrait *{animation-play-state:paused!important}
-#boot{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:20px;
+#boot{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:20px;cursor:pointer;
   background:radial-gradient(circle at 50% 40%,var(--surf2),var(--bg) 72%);
   transition:opacity .6s ease,transform .6s ease,visibility .6s}
 #boot.hide{opacity:0;visibility:hidden;transform:scale(1.04);pointer-events:none}
@@ -115,7 +116,7 @@ html.loading .hero-in *,html.loading .portrait,html.loading .portrait *{animatio
   background-clip:padding-box;
   box-shadow:0 0 0 3px var(--ac),0 0 0 9px color-mix(in srgb,var(--ac) 18%,transparent),0 24px 70px color-mix(in srgb,var(--ac) 30%,transparent);
   display:grid;place-items:center}
-.ph span{font:800 clamp(48px,9vw,96px) "Bricolage Grotesque";color:var(--ac);letter-spacing:-.04em}
+.ph span{font:800 clamp(48px,9vw,96px) "Bricolage Grotesque",sans-serif;color:var(--ac);letter-spacing:-.04em}
 .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
 .fl{position:absolute;display:flex;align-items:center;gap:10px;padding:8px 14px 8px 8px;border-radius:40px;background:var(--surf);border:1px solid var(--line);
   box-shadow:var(--shadow);animation:float 5s ease-in-out infinite;white-space:nowrap;
@@ -124,7 +125,7 @@ html.loading .hero-in *,html.loading .portrait,html.loading .portrait *{animatio
 .fl.drag{cursor:grabbing;animation-play-state:paused;z-index:5;border-color:var(--ac);box-shadow:0 20px 50px color-mix(in srgb,var(--ac) 35%,transparent)}
 .fl .lg{width:42px;height:42px;border-radius:50%;background:#fff;display:grid;place-items:center}
 .fl img{width:26px;height:26px;display:block}
-.fl b{font:700 15px "Bricolage Grotesque";line-height:1.1}
+.fl b{font:700 15px "Bricolage Grotesque",sans-serif;line-height:1.1}
 .fl small{display:block;font-size:12px;color:var(--mu);font-weight:400}
 .f1{top:2%;left:-6%}
 .f2{top:42%;right:-12%;animation-delay:-1.7s}
@@ -145,7 +146,7 @@ html.loading .hero-in *,html.loading .portrait,html.loading .portrait *{animatio
 .stats{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .stat{background:var(--surf);border:1px solid var(--line);border-radius:16px;padding:18px;transition:transform .25s,border-color .25s}
 .stat:hover{transform:translateY(-4px);border-color:var(--ac)}
-.stat b{font:800 42px "Bricolage Grotesque";display:block;color:var(--ac);line-height:1}
+.stat b{font:800 42px "Bricolage Grotesque",sans-serif;display:block;color:var(--ac);line-height:1}
 .stat span{color:var(--mu);font-size:14px}
 
 /* ---------- research ---------- */
@@ -189,9 +190,9 @@ html.loading .hero-in *,html.loading .portrait,html.loading .portrait *{animatio
 .logo{position:relative;width:68px;height:68px;margin:0 auto 12px;display:grid;place-items:center;border-radius:18px;background:#fff;box-shadow:0 6px 18px rgba(0,0,0,.18)}
 .logo img{width:40px;height:40px;display:block;transition:transform .3s}
 .skill:hover .logo img{transform:scale(1.15) rotate(-6deg)}
-.logo span{display:none;font:800 18px "Bricolage Grotesque";color:#222}
+.logo span{display:none;font:800 18px "Bricolage Grotesque",sans-serif;color:#222}
 .logo.fallback img{display:none}.logo.fallback span{display:block}
-.skill b{position:relative;display:block;font:700 17px "Bricolage Grotesque"}
+.skill b{position:relative;display:block;font:700 17px "Bricolage Grotesque",sans-serif}
 .skill small{position:relative;display:block;color:var(--mu);font-size:13px;margin:2px 0 10px}
 .meter{position:relative;height:6px;border-radius:6px;background:var(--line);overflow:hidden}
 .meter::after{content:"";display:block;height:100%;width:var(--w);background:linear-gradient(90deg,var(--ac),var(--am));transform:scaleX(0);transform-origin:left;transition:transform 1.2s cubic-bezier(.2,.8,.2,1) var(--d,0s)}
@@ -212,6 +213,9 @@ footer{position:relative;z-index:1;text-align:center;padding:40px 6vw;color:var(
 /* ---------- reveal ---------- */
 .rv{opacity:0;transform:translateY(34px);transition:opacity .8s cubic-bezier(.2,.8,.2,1) var(--d,0s),transform .8s cubic-bezier(.2,.8,.2,1) var(--d,0s)}
 .rv.in{opacity:1;transform:none}
+/* keep hover lift working after reveal (.rv.in would otherwise cancel it) */
+.stat.rv.in:hover{transform:translateY(-4px)}
+.skill.rv.in:hover{transform:translateY(-6px)}
 h2.rv::after{content:"";display:block;height:4px;width:0;margin-top:12px;border-radius:4px;background:linear-gradient(90deg,var(--ac),var(--am));transition:width 1s .3s cubic-bezier(.2,.8,.2,1)}
 h2.rv.in::after{width:72px}
 
@@ -219,7 +223,7 @@ h2.rv.in::after{width:72px}
   *,*::before,*::after{animation:none!important;transition:none!important}
   html{scroll-behavior:auto}
   .rv{opacity:1;transform:none}
-  .hero h1{color:var(--tx);background:none}
+  .hero h1{color:var(--tx);-webkit-text-fill-color:currentColor;background:none}
   .tl::before{transform:none}.meter::after{transform:scaleX(1)}
   h2.rv::after{width:72px}.glow{display:none}
 }
@@ -250,7 +254,7 @@ setTimeout(function(){var b=document.getElementById('boot');if(b){b.remove();doc
   <b>M<span>B</span></b>
   <a href="#about">About</a><a href="#research">Research</a><a href="#conferences">Conferences</a><a href="#work">Work</a><a href="#education">Education</a>
   <a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
-  <button id="th" aria-label="Toggle light and dark theme">Theme</button>
+  <button id="th" type="button" aria-label="Toggle light and dark theme">Theme</button>
 </nav>
 
 <header class="hero">
@@ -267,7 +271,7 @@ setTimeout(function(){var b=document.getElementById('boot');if(b){b.remove();doc
     <div class="ring" aria-hidden="true"></div>
     <div class="ph">
       <span aria-hidden="true">MB</span>
-      <!-- Put your photo next to this file and name it profile.jpg (or change the src) -->
+      <!-- Put your photo next to this file and name it profile.jpeg (or change the src) -->
       <img src="profile.jpeg" alt="Portrait of Mohtasin Bari" onerror="this.style.display='none'">
     </div>
     <div class="fl f1"><div class="lg"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/latex/latex-original.svg" alt="" onerror="this.style.display='none'"></div><div><b>Research</b><small>ML · DL · Papers</small></div></div>
@@ -283,7 +287,7 @@ setTimeout(function(){var b=document.getElementById('boot');if(b){b.remove();doc
   <div class="about">
     <div>
       <p>I'm a third-year B.Sc. student building a foundation in <strong>software development and AI</strong>. I work in C++, Java, Python and SQL, hold a Cisco certification, and have shipped projects from a disaster-relief platform to a car rental system.</p>
-      <p>I've co-authored a <strong>Springer Nature</strong> paper and presented at four international conferences, and I lead and volunteer in several research and environment clubs.</p>
+      <p>I've co-authored a <strong>Springer Nature</strong> paper and presented at several international conferences, and I lead and volunteer in several research and environment clubs.</p>
     </div>
     <div class="stats">
       <div class="stat"><b data-n="7">0</b><span>research papers</span></div>
@@ -413,8 +417,9 @@ const P=[
 {t:"Integrating Transit-Oriented Development and Green Infrastructure: Pathways to Low-Carbon Urban Mobility",a:"Mohtasin Bari, Sadi Mohammad Meraj, Md. Mortuza Ahmmed",v:"8th International Conference on Sustainable Development, United International University",g:"Sustainability",c:"var(--am)"},
 {t:"Contrasting Urban Decarbonization Pathways: Municipal Waste to Energy Capacity in Berlin vs Dhaka",a:"Mohtasin Bari, Sadi Mohammad Meraj, Md. Mahdi Hossain, Nafis Ahmed, Md. Mortuza Ahmmed",v:"8th International Conference on Sustainable Development, United International University",g:"Sustainability",c:"var(--am)"},
 {t:"From Environmental Change to Climate Anxiety: An Empirical Study of Bangladesh’s Climate Crisis",a:"Mahfuz Ahammed Rizvi, Tanvir Islam Tusar, Mohtasin Bari, Shahriar Sadib, Md. Mortuza Ahmmed",v:"Encountering the Human(ities): Anxiety, Storytelling, Futurity, North South University",g:"Sustainability",c:"var(--am)"},
-{t:"Affective Factors in Foreign Language Learning: Enjoyment, Anxiety, and Learner Well-Being",a:"Tanvir Islam Tusar, Mahfuz Ahammed Rizvi, Mohtasin Bari, Md. Mortuza Ahmmed",v:"Encountering the Human(ities): Anxiety, Storytelling, Futurity, North South University",g:"Language",c:"var(--pu)"}];
-{t:"Web Usage Mining of Canary-Token Logs: Network, Platform and In-App Browsing among Bangladeshi University Students",a:"Mahfuz Ahammed Rizvi, Mohtasin Bari, Tanvir Islam Tusar, Kazi Tahmidur Rahman, Md. Mortuza Ahmmed",v:"International Conference Of Physical Sciences 2026, Shahjalal University Of Science And Technology",g:"Network",c:"var(--pu)"}];
+{t:"Affective Factors in Foreign Language Learning: Enjoyment, Anxiety, and Learner Well-Being",a:"Tanvir Islam Tusar, Mahfuz Ahammed Rizvi, Mohtasin Bari, Md. Mortuza Ahmmed",v:"Encountering the Human(ities): Anxiety, Storytelling, Futurity, North South University",g:"Language",c:"var(--pu)"},
+{t:"Web Usage Mining of Canary-Token Logs: Network, Platform and In-App Browsing among Bangladeshi University Students",a:"Mahfuz Ahammed Rizvi, Mohtasin Bari, Tanvir Islam Tusar, Kazi Tahmidur Rahman, Md. Mortuza Ahmmed",v:"International Conference Of Physical Sciences 2026, Shahjalal University Of Science And Technology",g:"Network",c:"var(--pu)"}
+];
 
 /* Skill logos come from the open-source Devicon set (devicon.dev), loaded from a CDN. */
 const DEV='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/';
@@ -427,17 +432,19 @@ const S=[
  {n:'LaTeX',s:'Research writing',l:78,i:'latex/latex-original.svg'},
  {n:'OpenGLUT',s:'OpenGL · Graphics',l:65,i:'opengl/opengl-original.svg'},
  {n:'PowerShell',s:'Regex · scripting',l:65,i:'powershell/powershell-original.svg'},
- {n:'GitHub',s:'Version control',l:70,i:'github/github-original.svg'}];
+ {n:'GitHub',s:'Version control',l:70,i:'github/github-original.svg'}
+];
 
 /* ---------- research list ---------- */
 let cur='All';
 const box=document.getElementById('pubs'),chips=document.getElementById('chips');
 function draw(){
  box.innerHTML=P.filter(p=>cur==='All'||p.g===cur).map((p,i)=>`<div class="pub pop" style="--c:${p.c};animation-delay:${i*.09}s"><em>${p.g}</em><h3>${p.t}</h3><p>${p.a.replace('Mohtasin Bari','<strong>Mohtasin Bari</strong>')}</p><p>${p.v}</p></div>`).join('');
- [...chips.children].forEach(b=>b.setAttribute('aria-pressed',b.textContent===cur));
+ [...chips.children].forEach(b=>b.setAttribute('aria-pressed',String(b.textContent===cur)));
 }
-['All','AI','Sustainability','Energy','Language'].forEach(g=>{
- const b=document.createElement('button');b.className='chip';b.textContent=g;
+/* filter chips are built from the data, so every category always has a button */
+['All',...new Set(P.map(p=>p.g))].forEach(g=>{
+ const b=document.createElement('button');b.type='button';b.className='chip';b.textContent=g;
  b.onclick=()=>{cur=g;draw()};chips.appendChild(b)});
 draw();
 
@@ -461,9 +468,11 @@ document.getElementById('th').onclick=()=>{
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const ioN=new IntersectionObserver(es=>es.forEach(e=>{
  if(!e.isIntersecting)return;ioN.unobserve(e.target);
- const n=+e.target.dataset.n;let i=0;
+ const n=+e.target.dataset.n;
+ if(reduce){e.target.textContent=n;return}
+ let i=0;
  const step=()=>{i+=n/40;e.target.textContent=Math.min(n,Math.ceil(i));if(i<n)requestAnimationFrame(step)};
- reduce?e.target.textContent=n:step();
+ step();
 }),{threshold:.4});
 document.querySelectorAll('[data-n]').forEach(el=>ioN.observe(el));
 
@@ -500,11 +509,12 @@ function frame(){
   if(dm<170){cx.globalAlpha=1-dm/170;cx.strokeStyle=am;cx.beginPath();cx.moveTo(a.x,a.y);cx.lineTo(m.x,m.y);cx.stroke()}
   cx.globalAlpha=.9;cx.fillStyle=dm<170?am:ac;cx.beginPath();cx.arc(a.x,a.y,dm<170?3:2,0,7);cx.fill();
  }
+ cx.globalAlpha=1;
  if(!reduce)requestAnimationFrame(frame);
 }
-const hero=document.querySelector('.hero');
-hero.addEventListener('pointermove',e=>{const r=cv.getBoundingClientRect();m.x=e.clientX-r.left;m.y=e.clientY-r.top});
-hero.addEventListener('pointerleave',()=>{m.x=m.y=-999});
+const heroEl=document.querySelector('.hero');
+heroEl.addEventListener('pointermove',e=>{const r=cv.getBoundingClientRect();m.x=e.clientX-r.left;m.y=e.clientY-r.top});
+heroEl.addEventListener('pointerleave',()=>{m.x=m.y=-999});
 addEventListener('resize',()=>{size();if(reduce)frame()});
 size();frame();
 
@@ -524,7 +534,6 @@ if(reduce){ty.textContent=roles[0]}else{
 /* ---------- terminal intro ---------- */
 (function(){
  const boot=document.getElementById('boot');if(!boot)return;
- const root=document.documentElement;
  const done=()=>{if(!boot.isConnected||boot.classList.contains('hide'))return;
   boot.classList.add('hide');root.classList.remove('loading');setTimeout(()=>boot.remove(),800)};
  if(reduce){done();return}
@@ -539,10 +548,10 @@ if(reduce){ty.textContent=roles[0]}else{
   await sleep(350);
   await type(cmd,'./mohtasin --roles',38);
   await sleep(200);cur1.style.display='none';row2.style.visibility='visible';
-  const roles=['Researcher','Developer','Software Engineer'];
-  for(let i=0;i<roles.length;i++){
-   await type(role,roles[i],42);
-   if(i<roles.length-1){await sleep(380);await erase(role,18)}
+  const list=['Researcher','Developer','Software Engineer'];
+  for(let i=0;i<list.length;i++){
+   await type(role,list[i],42);
+   if(i<list.length-1){await sleep(380);await erase(role,18)}
   }
  })();
  const DUR=4000;
@@ -588,13 +597,13 @@ if(reduce){ty.textContent=roles[0]}else{
 })();
 
 /* ---------- scroll progress + active nav ---------- */
-const prog=document.getElementById('prog'),links=[...document.querySelectorAll('nav a')];
-const secs=links.map(a=>document.querySelector(a.getAttribute('href')));
+const prog=document.getElementById('prog'),navLinks=[...document.querySelectorAll('nav a')];
+const secs=navLinks.map(a=>document.querySelector(a.getAttribute('href')));
 function onScroll(){
  const h=document.documentElement;
  prog.style.transform=`scaleX(${scrollY/((h.scrollHeight-innerHeight)||1)})`;
  let k=-1;secs.forEach((s,i)=>{if(s&&s.getBoundingClientRect().top<innerHeight*.4)k=i});
- links.forEach((a,i)=>a.classList.toggle('act',i===k));
+ navLinks.forEach((a,i)=>a.classList.toggle('act',i===k));
 }
 addEventListener('scroll',onScroll,{passive:true});onScroll();
 
